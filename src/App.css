@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --red: #ba2d52;
+  --hoverred: #8c293e;
+  --gray: #919086;
+  --hovergray: #363940;
+  --primary:#4f8b9c;
+  --hoverprimary: #19506b;
+  --green: #3e8d3f;
+  --hovergreen: #1a5635;
+  --light-gray: #f7f7f7;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Poppins", serif;
+}
+
+.counterContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  background-color: var(--light-gray);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: space-evenly;
+ 
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+  
+
+.btn{
+  padding: 10px;
+  width:120px;
+  border-radius: 5px;
+  font-size: large;
+  color: #ffffff;
+  font-weight: 400;
+  border: none;
+}
+
+.increment-btn {
+  background-color: var(--primary);
+}
+
+.increment-btn:hover {
+  background-color: var(--hoverprimary);
+}
+
+.decrement-btn {
+  background-color: var(--red);
+}
+
+.decrement-btn:hover {
+  background-color: var(--hoverred);
+}
+
+.reset-btn {
+  background-color: var(--gray);
+}
+
+.reset-btn:hover {
+  background-color: var(--hovergray);
+}
