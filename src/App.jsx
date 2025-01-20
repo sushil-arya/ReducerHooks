@@ -1,12 +1,13 @@
 import './App.css'
-import CounterReducerHook from './components/CounterReducerHook/CounterReducerHook'
+import CounterUseStateHook from './components/CounterStateHook/CounterUseStateHook'
+// import CounterReducerHook from './components/CounterReducerHook/CounterReducerHook'
 
 function App() {
 
   return (
     <>
-      {/* <CounterUseStateHook /> */}
-      <CounterReducerHook />
+      <CounterUseStateHook />
+      {/* <CounterReducerHook /> */}
     </>
   )
 }
