@@ -14,7 +14,7 @@ function reducer(state,action){
   }
 }
 
-const CounterUseStateHook = () => {
+const CounterReducerHook = () => {
 
   // console.log(useReducer());
 
@@ -34,4 +34,4 @@ const CounterUseStateHook = () => {
   )
 }
 
-export default CounterUseStateHook
+export default CounterUseReducerHook
