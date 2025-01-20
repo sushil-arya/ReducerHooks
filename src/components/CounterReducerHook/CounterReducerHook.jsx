@@ -34,4 +34,4 @@ const CounterReducerHook = () => {
   )
 }
 
-export default CounterUseReducerHook
+export default CounterReducerHook
