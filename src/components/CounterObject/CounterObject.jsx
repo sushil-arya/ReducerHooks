@@ -7,16 +7,21 @@ function reducer(state,action){
   switch(action.type){
     case 'increment':
       return {...state,counter: state.counter+action.payload};
+      
     case 'decrement':
       if(state.counter>0)
         return {...state,counter: state.counter-action.payload};
+        return initialState;
     case 'increment1':
         return {...state,counter1: state.counter1+action.payload};
+      
     case 'decrement1':
       if(state.counter1>5)
         return {...state,counter1: state.counter1-action.payload};
+        return initialState;
     case'reset':
       return initialState;
+      
     default:
       return state;
   }
@@ -24,11 +29,12 @@ function reducer(state,action){
 
 const CounterObject = () => {
 
-  // console.log(useReducer());
+  
+  //console.log(useReducer());
 
   const[count,dispatch] = useReducer(reducer,initialState);
 
-
+  
 
   return (
     <div className="counterContainer">
