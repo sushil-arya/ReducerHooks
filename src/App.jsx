@@ -1,12 +1,12 @@
 import './App.css'
-import CounterObject from './components/CounterObject/CounterObject'
+import FetchState from './components/FetchState/FetchState'
+
 
 function App() {
 
   return (
     <>
-      
-      <CounterObject />
+      <FetchState />
     </>
   )
 }
